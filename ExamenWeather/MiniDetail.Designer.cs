@@ -45,7 +45,7 @@
             // 
             // WeatherIcon
             // 
-            this.WeatherIcon.Location = new System.Drawing.Point(12, 25);
+            this.WeatherIcon.Location = new System.Drawing.Point(25, 25);
             this.WeatherIcon.Name = "WeatherIcon";
             this.WeatherIcon.Size = new System.Drawing.Size(100, 50);
             this.WeatherIcon.TabIndex = 4;
@@ -95,31 +95,34 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(339, 10);
+            this.label1.Location = new System.Drawing.Point(347, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 24);
             this.label1.TabIndex = 9;
             this.label1.Text = "hour";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(320, 41);
+            this.label2.Location = new System.Drawing.Point(344, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 24);
             this.label2.TabIndex = 10;
             this.label2.Text = "condition";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(325, 73);
+            this.label3.Location = new System.Drawing.Point(347, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 24);
             this.label3.TabIndex = 11;
             this.label3.Text = "details";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // lblwin
             // 
@@ -145,26 +148,29 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(304, 101);
+            this.label4.Location = new System.Drawing.Point(344, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 24);
             this.label4.TabIndex = 14;
             this.label4.Text = "windspeed";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(304, 130);
+            this.label5.Location = new System.Drawing.Point(347, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 24);
             this.label5.TabIndex = 15;
             this.label5.Text = "pressure";
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // MiniDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblpress);
@@ -178,7 +184,7 @@
             this.Controls.Add(this.lblCt);
             this.Controls.Add(this.WeatherIcon);
             this.Name = "MiniDetail";
-            this.Size = new System.Drawing.Size(464, 167);
+            this.Size = new System.Drawing.Size(548, 161);
             ((System.ComponentModel.ISupportInitialize)(this.WeatherIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

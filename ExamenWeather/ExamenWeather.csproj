@@ -94,12 +94,6 @@
     <Compile Include="DetailControl.Designer.cs">
       <DependentUpon>DetailControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="WeatherPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="WeatherPanel.Designer.cs">
-      <DependentUpon>WeatherPanel.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="DetailControl.resx">
       <DependentUpon>DetailControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,10 +111,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="WeatherPanel.resx">
-      <DependentUpon>WeatherPanel.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -131,6 +123,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\NicaraguaCitys.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
